@@ -66,46 +66,27 @@
 </head>
 <body class="font-sans text-slate-800 antialiased bg-slate-50 selection:bg-brand-500 selection:text-white overflow-x-hidden">
 
-    <!-- Modern Glass Navigation -->
-    <header class="glass-header sticky top-0 z-50 transition-all duration-300">
+     <!-- Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex-shrink-0 flex items-center gap-2 group cursor-pointer" onclick="window.scrollTo(0,0)">
-                <svg class="w-9 h-9 transform group-hover:scale-105 transition-transform" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4 5L12 19" class="stroke-brand-500" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M20 5L12 19" class="stroke-accent-500" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <a href="#" class="flex-shrink-0 flex items-center justify-center relative group py-2 w-48">
+                <!-- Background 'V' Symbol -->
+                <svg class="absolute w-16 h-16 text-brand-500/20 transition-colors duration-300 group-hover:text-brand-500/30" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 2L12 22L23 2H17L12 12.5L7 2H1Z"/>
                 </svg>
-                <span class="font-serif font-bold text-2xl text-slate-900 tracking-tight">Shree Velan Electronics and Furniture</span>
-            <span class="font-serif font-bold text-2xl text-slate-900 tracking-tight"> Electronics and Furniture</span>
-            </div>
-
-            
-            <!-- Desktop Nav -->
-            <nav class="hidden md:flex space-x-10 items-center">
-                <a href="#categories" class="text-slate-600 hover:text-brand-600 font-medium transition-colors text-sm uppercase tracking-wide">Collections</a>
-                <a href="#why-us" class="text-slate-600 hover:text-brand-600 font-medium transition-colors text-sm uppercase tracking-wide">Why Us</a>
-                <a href="#testimonials" class="text-slate-600 hover:text-brand-600 font-medium transition-colors text-sm uppercase tracking-wide">Reviews</a>
+                <!-- Overlaid Text -->
+                <div class="relative z-10 flex flex-col items-center">
+                    <span class="font-serif font-bold text-2xl text-slate-900 tracking-tight leading-none">Shree Velan</span>
+                    <span class="text-[0.60rem] font-bold tracking-widest text-brand-600 uppercase mt-1">Electronics &amp; Furniture</span>
+                </div>
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#categories" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Categories</a>
+                <a href="#why-us" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Why Us</a>
+                <a href="#testimonials" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Reviews</a>
             </nav>
             <div class="hidden md:flex">
-                <a href="#contact" class="bg-slate-900 text-white px-6 py-2.5 rounded-full font-medium hover:bg-brand-600 hover:shadow-lg hover:shadow-brand-500/30 transition-all duration-300 transform hover:-translate-y-0.5">
-                    Visit Showroom
-                </a>
-            </div>
-
-            <!-- Mobile Menu Button -->
-            <button id="mobile-menu-btn" class="md:hidden flex items-center text-slate-600 hover:text-brand-600 focus:outline-none">
-                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
-        </div>
-
-        <!-- Mobile Nav Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-xl border-t border-slate-100 shadow-2xl absolute w-full left-0 transition-all duration-300">
-            <div class="px-4 pt-4 pb-8 space-y-3 flex flex-col">
-                <a href="#categories" class="mobile-link block px-4 py-3 text-lg font-medium text-slate-700 hover:text-brand-600 hover:bg-brand-50 rounded-xl transition-colors">Collections</a>
-                <a href="#why-us" class="mobile-link block px-4 py-3 text-lg font-medium text-slate-700 hover:text-brand-600 hover:bg-brand-50 rounded-xl transition-colors">Why Us</a>
-                <a href="#testimonials" class="mobile-link block px-4 py-3 text-lg font-medium text-slate-700 hover:text-brand-600 hover:bg-brand-50 rounded-xl transition-colors">Reviews</a>
-                <a href="#contact" class="mobile-link block px-4 py-4 mt-4 text-center text-lg font-medium bg-slate-900 text-white rounded-xl hover:bg-brand-600 transition-colors">Contact Us</a>
+                <a href="#contact" class="bg-brand-600 text-white px-5 py-2.5 rounded-md font-semibold hover:bg-brand-700 transition-colors shadow-sm">Contact Us</a>
             </div>
         </div>
     </header>
